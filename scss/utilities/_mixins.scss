@@ -1,0 +1,18 @@
+//center and display block
+@mixin center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Button backgrounds and hover
+@mixin buttons($map) {
+  @each $btn-name, $color in $map {
+    &-#{$btn-name} {
+      background-color: $color;
+      &:hover {
+        background-color: lighten($color, 15%);
+      }
+    }
+  }
+}

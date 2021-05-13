@@ -1,0 +1,85 @@
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+.container {
+  padding: 0 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 10px;
+}
+
+[class^="col"] {
+  margin-top: 10px;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.theme.col-1 {
+  background-color: $iris-purple;
+}
+
+.theme.col-2 {
+  background-color: $coral-orange;
+}
+
+.theme.col-3 {
+  background-color: lighten(
+    saturate(adjust-hue($iris-purple, 24), 27.75),
+    19.61
+  );
+}
+
+.theme.col-4 {
+  background-color: lighten(saturate($arctic-blue, 0.34), 9.02);
+}
+
+.theme.col-5 {
+  background-color: lighten(
+    desaturate(adjust-hue($minty-teal, -28), 17.95),
+    7.84
+  );
+}
+
+.theme.col-6 {
+  background-color: darken(
+    desaturate(adjust-hue($arctic-blue, 3), 51.89),
+    13.53
+  );
+}
+
+.theme.col-7 {
+  background-color: lighten(desaturate($blush-red, 0.32), 9.8);
+}
+
+.theme.col-8 {
+  background-color: lighten(
+    desaturate(adjust-hue($coral-orange, 1), 0.89),
+    9.22
+  );
+}
+
+.theme.col-9 {
+  background-color: $blush-red;
+}
+
+.theme.col-10 {
+  background-color: $spring-green;
+}
+
+.theme.col-11 {
+  background-color: $arctic-blue;
+}
+
+.theme.col-12 {
+  background-color: lighten(desaturate(adjust-hue($minty-teal, 1), 0.21), 9.22);
+}
+
+.card {
+  flex-basis: 100%;
+}

@@ -1,0 +1,24 @@
+// Create at least 5 color variables
+
+// Color variables
+$white: #fff;
+$off-white: #ccc;
+$font-grey: #777;
+$minty-teal: #58e1c1;
+$arctic-blue: #51ddfc;
+$spring-green: #63cc82;
+$blush-red: #e4757a;
+$coral-orange: #fd7856;
+$iris-purple: #927bc1;
+
+// Button colors
+$btn-bkg: (
+  "default": $arctic-blue,
+  "success": $spring-green,
+  "error": $blush-red,
+  "warning": $coral-orange,
+  "info": $iris-purple,
+);
+
+// Media queries
+$break-med: 768px;
